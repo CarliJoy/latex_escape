@@ -14,3 +14,7 @@ except PackageNotFoundError:
     __version__ = "unknown"  # pragma: no cover
 finally:
     del version, PackageNotFoundError
+
+from .latex_escape import do_latex_escape
+
+__all__ = ["do_latex_escape"]
